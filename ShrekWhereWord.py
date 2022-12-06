@@ -2,13 +2,44 @@ ShrekScript = ["SHREK", " Written", " by", " William", " Steig", " &", " Ted", "
 
 index = int(input("What Word? "))
 length = int(len(ShrekScript))
+repitions = 1
+if repitions == 1:
+  if index > length:
+    print("try again, number is too large")
+  elif index < 0:
+    print("try again, number is too small")
+    index = [int(input("What Word?"))]
+  elif index == 0:
+    print("SHREKKKEKKKEEKEKEKEKEK")
+    retry = input("a to generate again, b to stop ")
+    repitions += 1
+  else:
+    print(ShrekScript[index])
+    retry = input("a to generate again, b to stop ")
+    repitions += 1
 
-if index > length:
-  print("try again, number is too large")
-elif index < 0:
-  print("try again, number is too small")
-  index = [int(input("What Word?"))]
-elif index == 0:
-  print("SHREKKKEKKKEEKEKEKEKEK")
-else:
-  print(ShrekScript[index])
+while repitions > 1:
+  if retry == "a":
+    index = int(input("What Word? "))
+    length = int(len(ShrekScript))
+    if index > length:
+      print("try again, number is too large")
+    elif index < 0:
+      print("try again, number is too small")
+      index = [int(input("What Word?"))]
+    elif index == 0:
+      print("SHREKKKEKKKEEKEKEKEKEK")
+      retry = input("a to generate again, b to stop ")
+      repitions += 1
+    else:
+      print(ShrekScript[index])
+      retry = input("a to generate again, b to stop ")
+      repitions += 1
+  if retry == "b":
+    print("""goodbye yellow brick roadddd...
+    
+    """)
+    for i in range(10):
+      print('d')
+    quit()
+   
