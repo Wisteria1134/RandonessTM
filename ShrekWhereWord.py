@@ -6,9 +6,6 @@ repitions = 1
 if repitions == 1:
   if index > length:
     print("try again, number is too large")
-  elif index < 0:
-    print("try again, number is too small")
-    index = [int(input("What Word?"))]
   elif index == 0:
     print("SHREKKKEKKKEEKEKEKEKEK")
     retry = input("a to generate again, b to stop ")
@@ -42,4 +39,3 @@ while repitions > 1:
     for i in range(10):
       print('d')
     quit()
-   
