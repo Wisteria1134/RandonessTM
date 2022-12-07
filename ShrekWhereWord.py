@@ -5,7 +5,10 @@ length = int(len(ShrekScript))
 repitions = 1
 if repitions == 1:
   if index > length:
-    print("try again, number is too large")
+    print(f"""enter a number between
+    0 - {length}""")
+    repitions += 1
+    retry = "a"
   elif index == 0:
     print("SHREKKKEKKKEEKEKEKEKEK")
     retry = input("a to generate again, b to stop ")
@@ -33,6 +36,6 @@ while repitions > 1:
     print("""goodbye yellow brick roadddd...
     
     """)
-    for i in range(10):
+    for i in range(50):
       print('d')
     quit()
