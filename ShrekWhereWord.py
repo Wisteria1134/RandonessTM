@@ -62,5 +62,5 @@ while repitions > 1:
       print(Fore.RED + '''goodbyeeeeeee
       ''')
       time.sleep(0.2-(i/150))
-    print("the world exploded rip haha lol get trolled u the world has ended lol")
+    print("the world exploded rip haha lol get trolled the world has ended lol")
     quit()
